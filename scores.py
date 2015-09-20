@@ -110,7 +110,7 @@ for person in reconnections:
     
 
 top_X_reconnects = set([])
-NUM_DESIRED_RECONNECTS = 5
+NUM_DESIRED_RECONNECTS = 20
 while len(top_X_reconnects) < min(potential_reconnections,NUM_DESIRED_RECONNECTS):
     random_num = random.randint(1,total)
     for person in cumul_reconnect:

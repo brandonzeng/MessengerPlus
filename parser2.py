@@ -57,7 +57,7 @@ def parse(html):
 	return messages
 
 with open ("messages.txt", "r") as myfile:
-    data = myfile.read().replace('\n', '')
+    data = myfile.read()
 
 result = parse(data)
 scores = []
@@ -65,3 +65,29 @@ for key in result:
 	scores.append((key, len(result[key])))
 scores = sorted(scores, key = lambda x: x[1], reverse = True)
 print scores
+
+
+
+"""
+"""
+
+import plotly.plotly as py
+from plotly.graph_objs import *
+
+from datetime import datetime
+dates = {}
+for key in result:
+	for date in result[key]:
+		if date in dates:
+			dates[date] += 1
+		else:
+			dates[date] = 1
+x = sorted(dates.keys())
+data = Data([
+    Scatter(
+        x = x,
+        y = [dates[i] for i in x]
+    ),
+])
+plot_url = py.plot(data, filename='python-datetime')
+print plot_url
