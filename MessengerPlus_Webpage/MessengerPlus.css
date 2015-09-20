@@ -1,0 +1,46 @@
+body { 
+          background-image: url(http://1.bp.blogspot.com/_oigT0GOX_oY/TUalzuee5kI/AAAAAAAAAgU/JdIomYJZQKM/s1600/The-best-top-desktop-green-wallpapers-green-wallpaper-green-background-hd-14.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size:cover;
+      }
+      h1 {
+        font-size: 60px;
+        color: black;
+        font-family:'Varela',sans-serif;
+      }
+      p {
+        font-size: 16px;
+        color: black;
+      }
+
+      img {
+         padding:0px;
+         border:8px solid white;
+      }
+
+      .title {
+        /*font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;*/
+        /*font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+
+        color:black;
+      }
+
+      .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    }
+
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+        transform: scale(1.3);
+ }
